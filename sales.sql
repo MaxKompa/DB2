@@ -1,0 +1,13 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "sales" (
+	"id"	INTEGER,
+	"product"	TEXT NOT NULL,
+	"price"	REAL NOT NULL,
+	"quantity"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "sales" VALUES (1,'Laptop',1000.0,5);
+INSERT INTO "sales" VALUES (2,'Phone',700.0,3);
+INSERT INTO "sales" VALUES (3,'Tablet',500.0,2);
+INSERT INTO "sales" VALUES (4,'Printer',300.0,4);
+COMMIT;
